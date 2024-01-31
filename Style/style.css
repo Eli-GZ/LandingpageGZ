@@ -1,0 +1,196 @@
+html{  
+  scroll-behavior: smooth;  
+}
+body{
+ margin:0;
+ padding:0;
+ 
+}
+
+#header-img{
+position:relative;
+top:-120px;
+width:10%;
+margin:0vw;
+border-radius:5px;
+box-shadow: 1px 1px 15px 5px white;
+cursor:pointer;
+}
+
+#header-img:hover{
+box-shadow: 1px 1px 15px 10px white;
+}
+
+nav{ 
+ background-color: #231557; 
+ width:100%;
+ height:12%;    
+ top:0;  
+ z-index:-1;
+ padding-left:8vw;
+ display:flex;  
+}
+
+li{    
+ list-style-type:none;  
+ text-align:center;  
+  
+}
+
+a{ 
+ color:white;
+ font-size:20px;  
+ text-decoration:none;
+ line-height:13vh; 
+ font-family: sans-serif; 
+ font-weight:900; 
+ 
+}
+a:hover{
+ color:black;
+ border-color: #231557;  
+ background-color: white;   
+ box-shadow: 1px 1px 1px 35px white;  
+ transition: 0.3s;  
+ 
+}
+.n1{
+flex-grow:1;
+}
+.n2{
+flex-grow:1;
+}
+.n3{
+flex-grow:1;
+}
+h1{  
+ position:relative;  
+ text-align:center;
+ color:black;
+ top:-60px;
+ font-family: fantasy; 
+ font-size:35px;
+ font-weight:200;
+
+}
+h2{
+ position:relative;  
+ text-align:center;
+ color:black;
+ top:-10px;
+ font-family: fantasy; 
+ font-size:30px;
+ font-weight:200;
+}
+
+#video{
+ position:relative;
+ top:-100px;
+ left:40vh;
+ margin:5vh 5vh 0 5vh;
+}
+
+#precios{    
+ display:flex;
+ justify-content:center;
+ height:48vw; 
+  
+}
+.placa-img{
+ width:115%; 
+ border-radius:5px;    
+}
+.placa-img2{
+ width:124%; 
+ border-radius:5px;  
+}
+.placa-img3{
+ width:119%; 
+ border-radius:5px;  
+}
+.placa-img4{
+ width:115%; 
+ border-radius:5px;  
+}
+h3{
+ font-family: fantasy; 
+ font-size:30px;
+ color:white;
+ font-weight:200;
+}
+.price{
+ font-size:30px;
+ border:1px 1px solid black;
+}
+.box{  
+ background-color:#231557;
+ width:150px; 
+ text-align:center;  
+ margin:5px;
+ line-height:150px;  
+ border-radius:5px; 
+ overflow:hidden;
+ cursor:pointer;  
+ 
+}
+.c1{
+flex-grow:1;
+border:1px solid black;
+
+}
+.c1:hover{
+flex-grow:3;
+transition:0.5s;
+}
+
+.c2{
+ flex-grow:1;
+  border:1px solid black;
+}
+.c2:hover{
+flex-grow:3;
+transition:0.5s;
+}
+
+.c3{
+ flex-grow:1;
+  border:1px solid black;
+}
+.c3:hover{
+flex-grow:3;
+transition:0.5s;
+}
+.c4{
+ flex-grow:1;
+  border:1px solid black;
+}
+.c4:hover{
+flex-grow:3;
+transition:0.5s;
+}
+#form{    
+ display:flex; 
+ font-family: fantasy; 
+ font-size:30px;    
+ justify-content:center;
+}
+p{
+ position:absolute;
+ font-size:20px;
+}
+#email{
+ margin-top:50px;  
+ height:40px;
+ width:300px;  
+}
+#submit{
+ cursor:pointer;
+ margin-top:50px; 
+ height:40px;
+ width:200px;
+ font-size:20px;
+ font-family: fantasy; 
+ color:white;
+ background-color:#231557;
+ font-weight:200;
+}
