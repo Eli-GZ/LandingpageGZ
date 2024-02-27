@@ -87,13 +87,7 @@ font-weight:300;
 h1 img{ 
  width: 3%;
   }
-h2{
- position:relative;  
- text-align:center;
- color:black;  
- font-size:30px;
- font-weight:200;
-}
+
 
 #hero{
   background-image: url('../img/hero.jpg'); 
@@ -174,7 +168,7 @@ z-index: 2;
 /*SLIDER*/
 
 #home{
-  height:100vh;
+  height:80vh;
   justify-content: center;    
 }
 #home h4{
@@ -203,22 +197,36 @@ li img{
   left: 9.5%;
   width: 40px;
 }
+h2{
+  position:relative;  
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  color:black;  
+  font-size:30px;
+  font-weight:300;
+
+ }
 #video{
+  height: 80vh;
   width: 100%;  
   object-fit: cover;
 }
 #video-box{
-margin: 0;
-padding: 0;
-height: 70vh;
+padding-top: 10vh;
+height: 90vh;
 display:flex;
+flex-direction: column;
 object-fit: cover;
 }
 #productos{  
+  padding-top: 10vh;
  display:flex;
- justify-content:center;   
+ flex-direction: column;
 }
-
+.container-product{
+  display: flex;
+}
 h3{
  font-size:25px;
  color:white;
