@@ -40,12 +40,13 @@ background-image: linear-gradient(to right,#1727e1  0%,  #cb1199 100%);
 box-shadow: 0px 0px 30px 5px black;
 }
 
-nav li,button{ 
+nav li, #titleBtn{ 
 position: relative; 
 list-style-type:none; 
 left: 50%;
 width: 10%; 
 height: 8vh; 
+cursor: pointer;
 }
 a{   
 color: white;
@@ -238,20 +239,16 @@ h3{
  color:white;
  font-weight:200;
 }
-.price{
- font-size:30px;
-}
+
 .box{ 
  display: flex; 
  flex-direction: column;
  background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%); 
  width:25%; 
- height: 70vh;
- text-align:center;  
+ height: 70vh; 
  margin:5px;
  border: 1px solid black; 
- cursor:pointer;  
- justify-content: space-between; 
+ cursor:pointer;   
 }
 .box:hover{
   transition: 0.5s;
@@ -265,13 +262,19 @@ h3{
   flex-direction: column; 
   object-fit: cover;
  }
- .imgtitle h3{
+ .imgTitle h3{
   display: flex;
   flex-direction: column;
-  height: 20vh;
+  height: 6vh;
   font-size: 32px;
   font-weight: 300;
  }
+.productBtns{
+ position: absolute;
+ text-align: center;
+ margin-top: 3vh;
+ width: 24%;
+}
 /*PRODUCTO*/
 #form{    
  display:flex; 
