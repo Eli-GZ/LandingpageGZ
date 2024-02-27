@@ -22,12 +22,13 @@ cursor:pointer;
 z-index: 999;
 top:-3vh ;
 left: 4%;
-font-family: fantasy;
+font-family: "Silkscreen", sans-serif; 
 font-weight: 100;
-font-size: 40px;
+font-size: 35px;
 color: white;
 }
 nav{ 
+font-family: "Silkscreen", sans-serif;
 z-index: 998;
 width: 100%;
 height: 9vh;
@@ -56,9 +57,10 @@ text-decoration-color:gold;
 }
 a:hover{ 
 text-decoration: underline;
-text-decoration-color: gold;
+text-decoration-color: white;
 }
 button{
+  font-family: "Silkscreen", sans-serif;
   font-size: 20px;
   font-weight: 600;
   background-color:rgb(66, 45, 255);
@@ -72,14 +74,14 @@ button:hover{
   box-shadow: 1px 1px 10px 2px white;
 }
 /*NAV*/
-
+/*HERO*/
 h1{ 
-font-family: Inter,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+font-family: "Silkscreen", sans-serif; 
 position: relative;
 text-align: center;
 color:white; 
 font-size:80px;
-font-weight:400;
+font-weight:300;
 }
 h2{
  position:relative;  
@@ -103,11 +105,69 @@ top: 20vh;
 width: 100%;
 height: 30vh;
 }
+/*HERO*/
+/*SLIDER*/
+.slider{
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.slide-track{
+  display: flex;
+  width: calc(250px*18);
+  animation: scroll 40s linear infinite;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 9));
+  }
+}
+.slide{
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+.slide img{
+  width: 100%;
+  transition: transform 1s;
+}
+.slide img:hover{
+  transform: translateZ(20px);
+}
 
+/*SLIDER-SHADOWS*/
+.slider::before, .slider::after{
+background: linear-gradient(to right, rgba(255, 255, 255,1) 0%,rgba(255, 255, 255,0) 100%);
+content:'';
+height: 100%;
+position: absolute;
+width: 15%;
+z-index: 2;
+}
+.slider::before{
+  left: 0;
+  top: 0;  
+}
+.slider::after{
+  right:0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+/*SLIDER*/
 #home{
-  height: 70vh;
-  justify-content: center;
-  padding-top:10%;
+  height:100vh;
+  justify-content: center;  
 }
 #home h4{
   display: flex;  
@@ -144,7 +204,7 @@ justify-content: space-around;
 padding: 3%;
 background-image: linear-gradient(to top, #7028e4a8 0%, #e5b2ca92 100%);
 }
-#precios{  
+#productos{  
  display:flex;
  justify-content:center;   
 }
