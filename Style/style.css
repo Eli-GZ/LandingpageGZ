@@ -227,7 +227,7 @@ object-fit: cover;
 /*VIDEO*/
 /*PRODUCTO*/
 #productos{  
-  padding-top: 10vh;
+  padding-top: 6vh;
  display:flex;
  flex-direction: column;
 }
